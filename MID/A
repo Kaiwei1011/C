@@ -1,0 +1,50 @@
+For
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int i=1,sum=0;
+   for(i=1;i<=401;i=i+4)			
+      sum+=i;
+   printf("1+5+9+...+401=%d\n",sum);	
+   
+   system("pause");
+   return 0;
+}
+
+
+
+while
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int i=1,sum=0;
+   while(i<=401)
+   {		   			
+      sum+=i;
+      i=i+4;
+    }
+   printf("1+5+9+...+401=%d\n",sum);
+   system("pause");
+   return 0;
+}
+
+
+
+for while
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int i=1,sum=0;
+   do
+   {
+     sum+=i;
+     i=i=4;
+   }
+   while(i<=401);
+   printf("1+5+9+...+401=%d\n",sum);
+   system("pause");
+   return 0;
+}
