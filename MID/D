@@ -1,0 +1,82 @@
+For
+#include <stdio.h>
+#include <stdlib.h>
+int fib(int);
+int main(void)
+{
+    int n,s;
+    printf("請輸入計算內容:");
+    scanf("%d",&s);
+    for(n=1;n<=s;n++)
+       printf("fib(%d)=%d\n",n,fib(n));
+
+    system("pause")
+    return 0;
+}
+
+int fib(int n)
+{
+   if(n==1 || n==2)
+     return 1;
+   else
+     return (fib(n-1)+fib(n-2));
+}
+
+
+
+While
+#include <stdio.h>
+#include <stdlib.h>
+int fib(int);
+int main(void)
+{
+    int n,s;
+    printf("請輸入計算內容:");
+    scanf("%d",&s);
+    n=1;
+    while(n<=s)
+    {
+     printf("fib(%d)=%d\n",n,fib(n));
+     n++;
+    }
+    system("pause")
+       return 0;
+}
+
+int fib(int n)
+{
+   if(n==1 || n==2)
+     return 1;
+   else
+     return (fib(n-1)+fib(n-2));
+}
+
+
+
+do while
+#include <stdio.h>
+#include <stdlib.h>
+int fib(int);
+int main(void)
+{
+    int n,s;
+    printf("請輸入計算內容:");
+    scanf("%d",&s);
+    n=1;
+    do
+    {
+     printf("fib(%d)=%d\n",n,fib(n));
+     n++;
+    }while(n<=s)
+    
+    system("pause")
+       return 0;
+}
+
+int fib(int n)
+{
+   if(n==1 || n==2)
+     return 1;
+   else
+     return (fib(n-1)+fib(n-2));
+}
